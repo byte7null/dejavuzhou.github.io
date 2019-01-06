@@ -223,62 +223,41 @@ func Email(){
 ```
 
 ### 4.2 Logrus-Hook-Slack
-安装logrus-slack-pacakge `go get github.com/multiplay/go-slack`
+安装slackrus `github.com/johntdyer/slackrus`
 ```go
-import (
-    "github.com/sirupsen/logrus"
-    "github.com/multiplay/go-slack/chat"
-    "github.com/multiplay/go-slack/lrhook"
-)
-func Bearychat(){
-    //cfg必须符合Config里面的变量,
-    cfg := lrhook.Config{
-        MinLevel:       logrus.InfoLevel,
-        Message:    chat.Message{
-            Text:   "发生了错误",
-        },
-        Attachment: chat.Attachment{
-            //Attach里面有很多字段,这里能够设置的只有title
-            // Field Text - Will be set to that of log entry Message.
-            // Field Fields - Will be created to match the log entry Fields.其实bearchart里面没有field字段
-            // Field Color - Will be set according to the LevelColors or UnknownColor if a match is not found..
-            Title: "123.txt",
-        },
-    }
-    h := lrhook.New(cfg, "https://hook.bearychat.com/=bw9Y1/incoming/********")
-    logrus.SetFormatter(&logrus.JSONFormatter{})
-    logrus.AddHook(h)
-    //这里就可以使用Warn了
-    logrus.Warn("")
-}
-```
-#### 问题一:
-但这里有个问题,那就是,`lrhook`里面config的变量与`bearchat`里面的变量不对应,导致`bearchat`定义的的字段不能有效设置
-但使用`lrhook`的好处是,在发生`log`时会自动发送
-#### 解决方法：
-使用`webhook`,构造与规定对应的`json`,并且可以处理`macdown`,只需在`log`发生时,手动调用即可
-```go
-func Bearyweb() {
-    c := webhook.New("https://**************")
-    m := &chat.Message{
-        Text: "filename",
-        Markdown: true,
-        Attachments: []*chat.Attachment{
-            {
-                Title : "world war 2",
-                Text  : "*go back* \n**macdown**\n>fjia",
-                Color : "#ffa500",
-            },
-        },
-    }
-    m.Send(c)
-}
-```
+package main
 
-#### 问题二：
-`bearchat`里面都是设置对应字段,所以不能像email那样把log级别自动加上
-#### 解决方法：
-在将某个字段手动设置为想要的`log`级别,比如把`Attachments:title`字段设置为`“Warn”`,
+import (
+	logrus "github.com/sirupsen/logrus"
+	"github.com/johntdyer/slackrus"
+	"os"
+)
+
+func main() {
+
+	logrus.SetFormatter(&logrus.JSONFormatter{})
+
+	logrus.SetOutput(os.Stderr)
+
+	logrus.SetLevel(logrus.DebugLevel)
+	
+	logrus.AddHook(&slackrus.SlackrusHook{
+		HookURL:        "https://hooks.slack.com/services/abc123/defghijklmnopqrstuvwxyz",
+		AcceptedLevels: slackrus.LevelThreshold(logrus.DebugLevel),
+		Channel:        "#slack-testing",
+		IconEmoji:      ":ghost:",
+		Username:       "foobot",
+	})
+
+	logrus.Warn("warn")
+	logrus.Info("info")
+	logrus.Debug("debug")
+}
+```
+- HookURL: 填写slack web-hook地址
+- AcceptedLevels: 设置日志输出级别
+- Channel: 设置日志频道
+- Username: 设置需要@的用户名
 
 ### 4.3 Logrus-Hook 日志分隔
 logrus本身不带日志本地文件分割功能,但是我们可以通过file-rotatelogs进行日志本地文件分割. 每次当我们写入日志的时候,logrus都会调用file-rotatelogs来判断日志是否要进行切分.关于本地日志文件分割的例子网上很多,这里不再详细介绍,奉上代码：
