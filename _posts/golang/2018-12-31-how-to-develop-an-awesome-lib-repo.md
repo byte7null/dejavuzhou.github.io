@@ -7,7 +7,7 @@ description: 有一个好主意并不能保证你的项目成功.您需要应用
 keywords: golang,GitHub,开源项目,开源项目推广
 date: 2019-01-07T13:19:54+08:00
 score: 5.0
-coverage: golang_lib_awesome.png
+coverage: golang_lib_awesome.jpeg
 ---
 
 ## 前言
