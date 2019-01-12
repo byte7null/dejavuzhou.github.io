@@ -1,9 +1,9 @@
 <div id="post__share">
     <a id="icon-twitter" class="fontello"
-       href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.description }}"
+       href="https://twitter.com/intent/tweet?url={{ site.url | append: page.url | url_encode }}&text={{'『' | append: page.title | append: '』' | append: page.description | url_encode}}"
        target="_blank"></a>
     <a id="icon-cc"
-       class="fontello" href="https://www.evernote.com/clip.action?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}"
+       class="fontello" href="https://www.evernote.com/clip.action?url={{ site.url | append: page.url | url_encode }}&title={{'『' | append: page.title | append: '』' | append: page.description | url_encode}}"
        target="_blank"></a>
     <a id="icon-weibo" class="fontello"
        href="http://v.t.sina.com.cn/share/share.php?url={{ site.url | append: page.url | url_encode }}&title={{'『' | append: page.title | append: '』' | append: page.description | url_encode}}"
