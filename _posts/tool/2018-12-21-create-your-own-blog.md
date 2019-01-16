@@ -34,13 +34,17 @@ description: 利用Jekyll使用GithubPages提供的网页托管服务,在CNAME�
 
 ### 1.2为什么要使用jekyll?
 
-jekyll和GithubPages服务可以完美的结合,GithubPage会自动的帮助你编译jekyll代码到html代码,GithubPage提供web服务.
-模板语法(Liquid)简单
-对于博客支持代码显示非常漂亮的语法高亮.
-也可以在自己编译jekyll语法来编程生成html网站让自己的服务托管,
+- jekyll和GithubPages服务可以完美的结合,
+- GithubPage会自动的帮助你编译jekyll代码到html代码,
+- GithubPage提供web服务.
+- 模板语法(Liquid)简单
+- 对于博客支持代码显示非常漂亮的语法高亮.
+- 也可以在自己编译jekyll语法来编程生成html网站让自己的服务托管,
 
 缺点
-Ruby环境不是很好搭建
+
+- Ruby环境不是很好搭建
+- 非程序员不友好
 
 
 ### 1.3 Jekyll原理
