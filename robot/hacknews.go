@@ -1,11 +1,11 @@
-package util
+package robot
 
 import (
 	"encoding/json"
 	"errors"
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
-	"github.com/dejavuzhou/dejavuzhou.github.io/config"
+	"github.com/spf13/viper"
 	"html/template"
 	"net/http"
 	"os"
@@ -28,8 +28,8 @@ func downloadHtml(url string) (*goquery.Document, error) {
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("cookie", config.HTTP_COOKIE)
-	req.Header.Set("User-Agent", config.HTTP_USER_AGENT)
+	req.Header.Set("cookie",viper.GetString("HTTP_COOKIE"))
+	req.Header.Set("User-Agent",viper.GetString("HTTP_USER_AGENT"))
 	res, err := client.Do(req)
 	if err != nil {
 		return nil, err

@@ -15,6 +15,43 @@ description: 利用Jekyll使用GithubPages提供的网页托管服务,在CNAME�
 利用Jekyll使用GithubPages提供的网页托管服务,在CNAME到自己的定义的域名就可以,快速创建一个属于自己的技术分享网站,除了可选的域名服务费用之外.
 几乎不用花任何费用.
 
+
+### 1.3为什么要使用GithubPage?
+- 不需要关系服务器依赖和配置nginx
+- 帮助你快捷提供HTTPS支持,不用担心证书过期的问题
+- 可以CNAME到自己的域名
+- 可以自己写机器人来定时发送博客
+- 在GitHub上写博客
+- 可以向写代码一样写播博客
+- 支持GitHub格式代码高亮
+- 模板语法简单易学
+- 不需要数据库支持
+
+不好的地方
+
+- 博客内容开源让被人快速复制你的内容
+- Github屏蔽了国内的搜索引擎(可以通过CDN解决国内搜索引擎被屏蔽)
+
+### 1.2为什么要使用jekyll?
+
+jekyll和GithubPages服务可以完美的结合,GithubPage会自动的帮助你编译jekyll代码到html代码,GithubPage提供web服务.
+模板语法(Liquid)简单
+对于博客支持代码显示非常漂亮的语法高亮.
+也可以在自己编译jekyll语法来编程生成html网站让自己的服务托管,
+
+缺点
+Ruby环境不是很好搭建
+
+
+### 1.3 Jekyll原理
+
+- 1. 扫描全部的博客文件
+- 2. 扫描配置文件
+- 使用ruby编译Jekyll代码,把整个网站都输出成html代码
+- 不需要数据库,博客内容保存到_post文件夹的markdown文件中,
+
+
+
 ## 2. 准备
 
 - Github账号 [注册]
@@ -80,8 +117,19 @@ description: 利用Jekyll使用GithubPages提供的网页托管服务,在CNAME�
 
 ## 6. 网站代码会不定时更新功能
     需要使用新的功能feature把 `_post` `image` `_config.yml` 文件进行覆盖
+    
+## 7. 博客自动机器原理
+这个博客机器人使用go语言实现(依赖少,可以几行代码就实现定时任务)
+你也可以使用其他语言实现流程如下
+- 1. 下载html网页 
+- 2. 获取有用Element 
+- 3. 保存数据库(go语言 数据库是可选的) 
+- 4. 输出jekyll可是博客文件 
+- 5. 使用一组git命令pushd代码到GitHub 
+- 6. GitPages收到Push自动编译Jekyll网站
+- 7. 网站机器人发送的博客了
 
-## 7. 致谢
+## 8. 致谢
 - [如果遇到问题请评论或者提ISSUE](https://github.com/dejavuzhou/dejavuzhou.github.io/issues)
 - [suyan](https://github.com/suyan/suyan.github.io)
 - [markdown教程](https://mojotv.cn/2018/11/21/learn-markdown.html)

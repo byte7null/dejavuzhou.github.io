@@ -1,10 +1,10 @@
-package util
+package robot
 
 import (
 	"crypto/md5"
 	"encoding/hex"
 	"encoding/json"
-	"github.com/dejavuzhou/dejavuzhou.github.io/config"
+	"github.com/spf13/viper"
 	"io"
 	"log"
 	"math/rand"
@@ -42,13 +42,13 @@ func translateChinese2English(text, from, to string) (obj *responseStruct) {
 		"q":      {text},
 		"to":     {to},
 		"from":   {from},
-		"appKey": {config.TRANSLATE_APP_ID},
+		"appKey": {viper.GetString("TRANSLATE_APP_ID")},
 		"salt":   {salt},
 		"sign":   {sign},
 		"ext":    {"mp3"},
 		"voice":  {"0"},
 	}
-	resp, err := http.PostForm(config.TRANSLATE_HOST, data)
+	resp, err := http.PostForm(viper.GetString("TRANSLATE_HOST"), data)
 	if err != nil {
 		log.Print(err)
 	}
@@ -77,7 +77,7 @@ type responseStruct struct {
 }
 
 func generateSign(q, salt string) string {
-	temp := config.TRANSLATE_APP_ID + q + salt + config.TRANSLATE_APP_SECRET
+	temp := viper.GetString("TRANSLATE_APP_ID") + q + salt + viper.GetString("TRANSLATE_APP_SECRET")
 	h := md5.New()
 	io.WriteString(h, temp)
 	return hex.EncodeToString(h.Sum(nil))

@@ -1,22 +1,22 @@
 package main
 
 import (
-	"github.com/dejavuzhou/dejavuzhou.github.io/util"
+	"github.com/dejavuzhou/dejavuzhou.github.io/robot"
 	"log"
 	"time"
 )
 
 var gitCount = 1
 
-func createCmds() []util.Cmd {
+func createCmds() []robot.Cmd {
 	gitCount++
-	gifConfig1 := []util.Cmd{
+	gifConfig1 := []robot.Cmd{
 		{"git", []string{"config", "--global", "user.email", "'dejavuzhou@qq.com'"}},
 	}
-	gifConfig2 := []util.Cmd{
+	gifConfig2 := []robot.Cmd{
 		{"git", []string{"config", "--global", "user.email", "'1413507308@qq.com'"}},
 	}
-	cmds := []util.Cmd{
+	cmds := []robot.Cmd{
 		{"git", []string{"config", "--global", "user.name", "'EricZhou'"}},
 		{"git", []string{"stash"}},
 		{"git", []string{"pull", "origin", "master"}},
@@ -40,19 +40,22 @@ func createCmds() []util.Cmd {
 
 func main() {
 	for {
-		if err := util.SpiderHackNews(); err != nil {
+		if err := robot.SpiderHackNews(); err != nil {
 			log.Println(err)
 		}
-		if err := util.SpiderHackShows(); err != nil {
+		if err := robot.SpiderHackShows(); err != nil {
 			log.Println(err)
 		}
-		if err := util.ParsemarkdownHacknews(); err != nil {
+		if err := robot.ParsemarkdownHacknews(); err != nil {
 			log.Println(err)
 		}
-		_, err := util.RunCmds(createCmds())
+		_, err := robot.RunCmds(createCmds())
 		if err != nil {
 			log.Println(err)
 		}
 		time.Sleep(3 * time.Hour)
 	}
 }
+
+
+
