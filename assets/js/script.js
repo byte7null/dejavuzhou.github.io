@@ -5,7 +5,6 @@
 \*---------------------------------*/
 
 
-
 // Detect window size, if less than 1280px add class 'mobile' to sidebar therefore it will be auto hide when trigger the pjax request in small screen devices.
 if (isMobile && window.location.pathname != "/") {
     $('#sidebar').addClass('mobile fullscreen')
@@ -153,6 +152,16 @@ function afterPjax() {
 
     check();
     container.scroll(check);
+
+    //load google ads
+    if (isMobile) {
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8488823422266592",
+            enable_page_level_ads: true
+        });
+    } else {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    }
 }
 
 //afterPjax();

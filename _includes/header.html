@@ -27,12 +27,10 @@
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         isMobile = true
     }
-    if(isMobile){
-        window.onload = function() {
-            (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-8488823422266592",
-                enable_page_level_ads: true
-            });
-        }
+    window.onload = function() {
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8488823422266592",
+            enable_page_level_ads: true
+        });
     }
 </script>
