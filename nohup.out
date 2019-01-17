@@ -1,0 +1,12 @@
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x20 pc=0x71335e]
+
+goroutine 1 [running]:
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x2e
+html/template.(*Template).Execute(0x0, 0x8a26c0, 0xc00000e5d0, 0x7ec2a0, 0xc0003d1680, 0xc0004f1e00, 0x26)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/dejavuzhou/dejavuzhou.github.io/util.ParsemarkdownHacknews(0x0, 0x0)
+	/Golang/src/github.com/dejavuzhou/dejavuzhou.github.io/util/hacknews.go:128 +0x363
+main.main()
+	/Golang/src/github.com/dejavuzhou/dejavuzhou.github.io/main.go:49 +0xdf
