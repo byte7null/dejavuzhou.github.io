@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ---
 title : Sitemap
 ---
@@ -12,3 +13,7 @@ Disallow: /
 User-agent: *
 Allow: /
 
+=======
+User-agent: *
+Allow: /
+>>>>>>> Stashed changes
