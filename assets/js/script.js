@@ -152,16 +152,6 @@ function afterPjax() {
 
     check();
     container.scroll(check);
-
-    //load google ads
-    if (isMobile) {
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-8488823422266592",
-            enable_page_level_ads: true
-        });
-    } else {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    }
 }
 
 //afterPjax();
