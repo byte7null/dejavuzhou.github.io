@@ -2,7 +2,7 @@
 
 ## 博客系统和golang和Hacknews机器人
 
-地址：[MojoTV.cn](https://mojotv.cn)
+地址：[tech.mojotv.cn](https://tech.mojotv.cn)
 
 ## Feature
 - 每天自动翻译hacknews新闻
