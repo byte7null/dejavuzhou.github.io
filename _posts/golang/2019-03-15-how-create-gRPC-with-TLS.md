@@ -481,6 +481,6 @@ func callMinionRpcFuncRunCmd(machine *models.Machine, in *pb.CmdObj) (*pb.CmdRes
 
 ```
 
-
-## 1.总结
+## 7.总结
+### 完整代码详解[dejavuzhou/thanos](https://github.com/dejavuzhou/thanos)
 

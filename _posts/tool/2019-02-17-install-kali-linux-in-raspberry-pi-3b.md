@@ -47,15 +47,11 @@ published: true
 <1>安装vim
 
     apt update && apt install vim -y
-1
+
 <2>修改源文件为清华源（为了速度，删除自带的官方源）
 
+```shell
 vim /etc/apt/sources.list
-1
 deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
-1
-<3>安装gparted
-
-apt update && apt install gparted -y
-1
-<4>打开gparted，右键带颜色部分—>Resize/Move–>鼠标拖动到最右边—>Resize,最后点3那个回车符号确认更改 
+```
+ 
