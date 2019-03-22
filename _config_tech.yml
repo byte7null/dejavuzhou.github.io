@@ -28,7 +28,7 @@ logo: /assets/image/logo01.png
 plugins:
 
 # 定义你的分类
-categories: golang Docker CheatSheet Python Tool Raft
+categories: golang Docker CheatSheet Python Tool Raft Algorithm
 
 # 排除文件夹
 exclude: [robot,util,config,tutorials,main.go,install.sh,jekyll.sh,Gemfile,Gemfile.lock,jekyll_run.sh]
