@@ -10,3 +10,5 @@ github.com/dejavuzhou/dejavuzhou.github.io/util.ParsemarkdownHacknews(0x0, 0x0)
 	/Golang/src/github.com/dejavuzhou/dejavuzhou.github.io/util/hacknews.go:128 +0x363
 main.main()
 	/Golang/src/github.com/dejavuzhou/dejavuzhou.github.io/main.go:49 +0xdf
+2019/03/26 04:24:45 the get request's response code is not 200
+2019/03/26 04:24:46 the get request's response code is not 200
