@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 算法02:字符串包含
+title: 算法03:字符串包含
 category: algorithm
 tags: algorithm 算法
 description: 给定两个分别由字母组成的字符串A和字符串B，字符串B的长度比字符串A短。请问，如何最快地判断字符串B中所有字母是否都在字符串A里？
