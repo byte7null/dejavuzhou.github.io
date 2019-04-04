@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gogs代码自动部署
-category: Tool
+category: Misc
 tags: Git
 keywords: Gogs,git,linux
 date: 2018-12-26T13:19:54+08:00

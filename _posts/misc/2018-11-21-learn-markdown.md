@@ -1,7 +1,7 @@
 ---
 layout: post
 title: markdown简明语法教程
-category: Tool
+category: Misc
 tags: markdown
 keywords: markdown,教程
 description: markdown简明语法教程

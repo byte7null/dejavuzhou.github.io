@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python运维:SaltStack简明教程
-category: Tool
+category: Misc
 tags: python 运维开发
 description: SaltStack是基于Python开发的一套C/S架构配置管理工具（功能不仅仅是配置管理，如使用salt-cloud配置AWS EC2实例），它的底层使用ZeroMQ消息队列pub/sub方式通信，使用SSL证书签发的方式进行认证管理。
 keywords: python运维,sltstack

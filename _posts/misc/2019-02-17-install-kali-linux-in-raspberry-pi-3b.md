@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在树莓派上安装kali linux黑客系统
-category: Tool
+category: Misc
 tags: kali linux 树莓派 raspberryPi
 description: 低成本的配置一台黑客使用的kali linux电脑
 keywords: 黑客,树莓派,raspberryPi,kali,linux

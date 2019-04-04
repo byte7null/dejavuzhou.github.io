@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shell 常用资源
-category: Tool
+category: Misc
 tags: Shell
 keywords: Shell
 description: shell/bash/资源教程

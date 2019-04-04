@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vim 常用资源
-category: Tool
+category: Misc
 tags: Vim
 keywords: Vim
 date: 2018-12-26T13:19:54+08:00

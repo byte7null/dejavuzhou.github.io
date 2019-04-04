@@ -1,7 +1,7 @@
 ---
 layout: post
 title: gitbook安装使用教程
-category: Tool
+category: Misc
 tags: Nginx gitbook node npm github pages
 keywords: gitbook 安装使用教程,node,npm
 date: 2018-12-26T13:19:54+08:00

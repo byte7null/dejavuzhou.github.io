@@ -1,7 +1,7 @@
 ---
 layout: post
 title: toml格式配置文件详解
-category: Tool
+category: Misc
 tags: toml
 keywords: toml格式配置文件详解
 date: 2018-12-26T13:19:54+08:00

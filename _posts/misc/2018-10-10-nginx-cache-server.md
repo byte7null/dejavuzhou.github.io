@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nginx设置缓存功能
-category: Tool
+category: Misc
 tags: Nginx
 keywords: Nginx,Cache,linux, CDN
 date: 2018-12-26T13:19:54+08:00

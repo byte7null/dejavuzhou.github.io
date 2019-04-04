@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 程序员的自我修养
-category: Tool
+category: Misc
 tags: 程序员
 keywords: how to be an awesome programmer,怎么成为一名成功的程序员
 date: 2018-12-26T13:19:54+08:00

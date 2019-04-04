@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git 常用资源
-category: Tool
+category: Misc
 tags: Git
 keywords: Git
 score: 4

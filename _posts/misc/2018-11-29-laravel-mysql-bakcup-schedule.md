@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Laravel添加MySQL定时备份
-category: Tool
+category: Misc
 tags: laravel lumen mysql 备份 定时任务 php
 keywords: php,lumen,laravel,mysql,备份,定时任务
 description: 为laravel/lumen添加mysql定时备份任务

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP代码混淆和加速
-category: Tool
+category: Misc
 tags: toml
 keywords: PHP7源代码混淆 PHP7 source code obfuscation
 date: 2018-12-26T13:19:54+08:00

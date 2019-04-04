@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为Github Pages Jekyll网站添加CDN
-category: Tool
+category: Misc
 tags: Jekyll Github CDN 阿里云
 keywords: Jekyll 博客 网站 Github 域名 HTTPS CDN
 description: 利用阿里云CDN加速Github Pages网站获取加速和stiemap爬取

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: php调用phantomJS截图
-category: Tool
+category: Misc
 tags: Javascript PhantomJS
 keywords: php,linux,phantomjs,js
 description: packagist上的composer包功能很冗余,我只需要用到phantomjs的截图功能

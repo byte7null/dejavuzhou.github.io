@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 程序员编程好助理
-category: Tool
+category: Misc
 tags: 工具
 keywords: 编程助手
 description: 编程助手

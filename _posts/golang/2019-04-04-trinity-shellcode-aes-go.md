@@ -4,7 +4,7 @@ title: golang进阶:go语言AES编写shellcode
 category: golang
 tags: golang golang进阶
 description: 
-keywords: shell-code后门,go黑客,go后门
+keywords: shell-code后门,go黑客,go后门,golang unsafe
 date: 2019-04-04T13:19:54+08:00
 score: 5.0
 coverage: golang_shellcode.jpg

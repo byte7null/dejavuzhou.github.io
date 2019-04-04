@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在浏览器里查看laravel日志文件
-category: Tool
+category: Misc
 tags: laravel lumen 日志 log
 keywords: php,lumen,laravel,日志,log
 description: 为laravel/lumen添加日志查看接口

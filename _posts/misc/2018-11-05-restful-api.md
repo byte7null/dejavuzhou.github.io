@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RESTful APIs 设计指南
-category: Tool
+category: Misc
 tags: RESTful
 keywords: http RESTful APIs 设计指南
 date: 2018-12-26T13:19:54+08:00

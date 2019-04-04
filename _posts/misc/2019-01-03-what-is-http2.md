@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 网络协议:HTTP2详解
-category: Tool
+category: Misc
 tags: 工具 网络协议
 description: 要想深刻的了解HTTP/2，那么我们必须对HTTP/1.x本身以及它的缺点有一定程度的熟悉，而这一节，我们对HTTP/1.x的请求形式以及其缺点进行一个简单的回顾
 keywords: 网络协议 http2协议

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: nginx配置之location
-category: Tool
+category: Misc
 tags: Nginx
 keywords: Nginx location settings
 date: 2018-12-26T13:19:54+08:00

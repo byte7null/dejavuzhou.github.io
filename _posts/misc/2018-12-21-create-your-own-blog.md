@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 8分钟创建优雅的博客网站
-category: Tool
+category: Misc
 tags: Jekyll
 date: 2018-12-26T17:19:54+08:00
 score: 5
