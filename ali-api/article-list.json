@@ -1,0 +1,16 @@
+---
+layout: null
+---
+{
+    "articles":[
+        {% for post in site.posts %}
+            {
+            "url":"{{ site.url | append: post.url }}",
+            "title":"{{post.title }}",
+            "time":"{{ post.date }}"
+            }{% if forloop.last != true %},{% endif %}
+        {% endfor %}
+]
+
+}
+
