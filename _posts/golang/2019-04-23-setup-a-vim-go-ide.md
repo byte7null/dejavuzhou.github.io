@@ -5,7 +5,7 @@ category: golang
 tags: golang golang进阶
 description: 
 keywords: shell-code后门,go黑客,go后门,golang unsafe
-date: 2019-04-04T13:19:54+08:00
+date: 2019-04-23T13:19:54+08:00
 score: 5.0
 coverage: golang_shellcode.jpg
 published: true
@@ -20,7 +20,7 @@ But here's something I wanted to show you. How to use vim as a fully-fledged IDE
 First things first, here's how the result looks. I promise, this is not one of these "unix-porn", fantastical but unusable setups you see on the internet. It is something you can work in on a daily basis, and something that *you* can set up in less than 30 minutes.
 
 <center>
-<img src="assets/image/vim-go-ide-complete.png" style='height: 130%; width: 130%; object-fit: contain'/>
+<img src="/assets/image//vim-go-ide-complete.png" style='height: 130%; width: 130%; object-fit: contain'/>
 </center>
 
 ### Convinced? Let's go! 
@@ -197,7 +197,7 @@ When you want to remove it, or freshen up with something more personal, it's jus
 Here's how it looks like in action, in various statuses and files on my system.
 
 <center>
-<img src="assets/image/vim-airline.png" style='height: 100%; width: 100%; object-fit: contain'/>
+<img src="/assets/image//vim-airline.png" style='height: 100%; width: 100%; object-fit: contain'/>
 </center>
 
 
@@ -207,7 +207,7 @@ If you have any issues with missing symbols or fonts not rendering correctly, yo
 If the issue persists, the next step would be to download a custom font that contains the additional symbols you need (such as [this one](https://github.com/runsisi/consolas-font-for-powerline) for Consolas), and/or add `let g:airline_powerline_fonts = 1` to your `~/.vimrc` and your issues should be resolved!
 
 <center>
-<img src="assets/image/vim-airline-utf8.png" style='height: 100%; width: 100%; object-fit: contain'/>
+<img src="/assets/image//vim-airline-utf8.png" style='height: 100%; width: 100%; object-fit: contain'/>
 </center>
 
 
@@ -216,7 +216,7 @@ If the issue persists, the next step would be to download a custom font that con
 Well, one final little thing, the cherry on top. To get that sweet information about your version control system, you need [vim-fugitive](https://github.com/tpope/vim-fugitive). 
 
 <center>
-<img src="assets/image/vim-fugitive.png" style='height: 50%; width: 50%; object-fit: contain'/>
+<img src="/assets/image//vim-fugitive.png" style='height: 50%; width: 50%; object-fit: contain'/>
 </center>
 
 [Tim Pope](http://twitter.com/tpope) is *the* vim plugin guy. He's the original creator of the most popular third-party package management, Pathogen, as well as the author of many of the top `vim` plugins.
