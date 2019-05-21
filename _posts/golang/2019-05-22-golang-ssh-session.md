@@ -152,7 +152,7 @@ https://github.com/dejavuzhou/felix
 ```
 
 
-## 高级用户
+## 高级用法
 
 - 使用命令行快速远程执行cmd [github.com/dejavuzhou/felix/ssh](https://github.com/dejavuzhou/felix/blob/master/flx/ssh.go)
 - golang ssh 转websocket [ssh2ws](https://github.com/dejavuzhou/felix/tree/master/ssh2ws)
