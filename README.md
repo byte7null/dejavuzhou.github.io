@@ -21,11 +21,6 @@
 8. 自定义自己的评论系统  `_layouts/post.html` 第15行
 9. 站长管理平添校验代码  `_includes/header.html` 第14~20行
  
-## 分支说明
-
-- 三栏布局（master分支，基于[3-Jekyll](https://github.com/P233/3-Jekyll)）
-- 三栏布局 (bootstrap-based分支，基于Bootstrap)
-- 单栏布局（first-ui分支，基于Bootstrap）
 
 ## 这个项目还包含了以个go语言的机器人来每天定时翻译hacknews新闻
 
