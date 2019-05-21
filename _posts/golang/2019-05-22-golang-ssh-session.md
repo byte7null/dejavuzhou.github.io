@@ -17,7 +17,7 @@ published: true
 
 如果你有一个可以远程执行命令的工具，那么就可以像操作单台机器那样操作多台机器，机器越多，效率提高的越多。 远程执行命令最常用的方法就是利用 SSH 协议，将命令发送到远程机器上执行，并获取返回结果。
 
-## 连接
+## 代码
 
 连接包含了认证，可以使用 `password` 或者 `sshkey` 2种方式来认证。下面的示例为了简单，使用了密码认证的方式来完成连接。
 
@@ -153,7 +153,7 @@ https://github.com/dejavuzhou/felix
 
 
 ## 高级用法
-
+- [crypto/ssh 官方文档example](https://godoc.org/golang.org/x/crypto/ssh#pkg-examples)
 - 使用命令行快速远程执行cmd [github.com/dejavuzhou/felix/ssh](https://github.com/dejavuzhou/felix/blob/master/flx/ssh.go)
 - golang ssh 转websocket [ssh2ws](https://github.com/dejavuzhou/felix/tree/master/ssh2ws)
 - golang ssh [自动输入sudo密码 line 50](https://github.com/dejavuzhou/felix/blob/master/flx/ternimal.go)
