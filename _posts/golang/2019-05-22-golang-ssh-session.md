@@ -5,7 +5,7 @@ category: golang
 tags: ssh golang进阶
 description: 远程执行命令有什么用？为什么要远程执行命令？ 如果你只有2，3台服务器需要管理的时候，远程执行命令确实没有没多大作用，你可以登录到每台服务器上去完成各种操作。 当你的服务器大于3台的时候，远程执行的命令的方式就可以大大提高你的生产力了。
 keywords: shell-code后门,go黑客,go后门,golang unsafe
-date: 2019-04-23T13:19:54+08:00
+date: 2019-05-22T13:19:54+08:00
 score: 5.0
 coverage: golang_ssh00.png
 published: true
