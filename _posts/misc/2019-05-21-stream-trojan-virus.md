@@ -2,7 +2,7 @@
 layout: post
 title: stream盗号木马病毒代码剖析
 category: Misc
-tags: 黑客 hack trojan virus 360 qihoo 网络安全 盗密码
+tags: 黑客 hack
 description: 盗号木马病毒代码剖析
 keywords: 盗号木马亡刃，伪装成迅游加速器，陌陌语音，腾讯免费加速器
 score: 5.0
