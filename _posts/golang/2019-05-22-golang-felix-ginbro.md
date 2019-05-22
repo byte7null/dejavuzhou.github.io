@@ -7,10 +7,10 @@ description: ginbro(gin and gorm's brother) 详解
 keywords: golang,ginbro,felix,github.com,dejavuzhou
 date: 2019-05-22T09:19:54+08:00
 score: 5.0
-coverage: ginbro_coverage.png
 published: true
 ---
 
+[![](/assets/image/ginbro_coverage.jpg)](https://github.com/dejavuzhou/felix)
 
 ## 安装felix
 
@@ -21,6 +21,10 @@ go mod download
 
 go install
 echo "添加 GOBIN 到 PATH环境变量"
+
+echo "或者"
+
+go get github.com/dejavuzhou/felix
 
 echo "go build && ./felix -h"
 
@@ -65,6 +69,7 @@ echo "go build && ./felix -h"
 
 ### 项目演示地址
 
+#### [felix sshw 网页UI演示地址 用户名和密码都是admin](http://felix.mojotv.cn/#/)
 #### [生成swagger API交互文档地址 http://ginbro.mojotv.cn/swagger/](http://ginbro.mojotv.cn/swagger/)
 #### [msql生成go代码地址](https://github.com/dejavuzhou/ginbro-son)
 #### [bili命令行演示视频地址](https://www.bilibili.com/video/av36804258/)
@@ -128,24 +133,24 @@ echo "三秒钟之后会自动帮助你打开浏览器,如果如果你使用的w
 
 默认用户名和密码都是 `admin`
 
-![](/assets/ginrbo_00.png)
+![](/assets/image/ginrbo_00.png)
 
 #### 2.填写数据库连接信息
 
-![](/assets/ginrbo_01.png)
+![](/assets/image/ginrbo_01.png)
 
 #### 3.配置app用户认证的表和字段
 
-![](/assets/ginrbo_02.png)
+![](/assets/image/ginrbo_02.png)
 
 #### 4.配置app 包名称,导出目录和监听地址
-![](/assets/ginrbo_03.png)
+![](/assets/image/ginrbo_03.png)
 
 #### 5.生成go代码
-![](/assets/ginrbo_04.png)
+![](/assets/image/ginrbo_04.png)
 
 #### 6.下载代码或cd者到指定目录
-![](/assets/ginrbo_05.png)
+![](/assets/image/ginrbo_05.png)
 
 
 ## 功能二:前端代码二进化,通过gin中间件整合到API服务
