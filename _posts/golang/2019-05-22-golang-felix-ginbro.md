@@ -183,8 +183,33 @@ Flags:
 
 ```
 
+### 使用说明:生成的二进制化go文件
+
+vuejs/dist 使用 `felix ginbin` 生成的go文件
+[https://github.com/dejavuzhou/felix/blob/master/staticbin/gin_static.go](https://github.com/dejavuzhou/felix/tree/master/staticbin)
+
+gin 路由应用二进制化的前端代码中间件如下:
+
+`import "github.com/dejavuzhou/felix/staticbin" //导入felix ginbin 生成的二进制化包`
+
+[https://github.com/dejavuzhou/felix/blob/master/ssh2ws/ssh2ws.go](https://github.com/dejavuzhou/felix/blob/master/ssh2ws/ssh2ws.go)
+
+````bash
+	r := gin.Default()
+	r.MaxMultipartMemory = 32 << 20
+
+	//sever static file in http's root path
+	binStaticMiddleware, err := staticbin.NewGinStaticBinMiddleware("/")
+	if err != nil {
+		return err
+	}
+	r.Use(binStaticMiddleware)
+````
+
+
 ## 引用和代码仓库
 
 ### [dejavuzhou/felix Golang 工具集](https://github.com/dejavuzhou/felix)
 ### [felix ginbro 命令逻辑代码目录](https://github.com/dejavuzhou/felix/tree/master/ginbro)
 ### [前端代码二进制化成gin中间件代码](https://github.com/dejavuzhou/felix/blob/master/ginbro/ginstatic.go)
+### 文章来源 [MojoTech](https://tech.mojotv.cn/2019/05/22/golang-felix-ginbro)
