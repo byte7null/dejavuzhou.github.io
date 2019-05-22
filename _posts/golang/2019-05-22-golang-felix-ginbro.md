@@ -1,6 +1,6 @@
 ---
 layout: post
-title: golang-felix-ginbro脚手架工具详解
+title: SQL+RESTful开源GO脚手架工具ginbro(gin and gorm's brother) 详解
 category: golang
 tags: ssh golang进阶
 description: ginbro(gin and gorm's brother) 详解
@@ -183,7 +183,7 @@ Flags:
 
 ```
 
-## 引用
+## 引用和代码仓库
 
 ### [dejavuzhou/felix Golang 工具集](https://github.com/dejavuzhou/felix)
 ### [felix ginbro 命令逻辑代码目录](https://github.com/dejavuzhou/felix/tree/master/ginbro)
